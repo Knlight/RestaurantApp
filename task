@@ -1,0 +1,9 @@
+sample link for restaurant:
+
+https://www.cafepaci.com.au/
+
+TASK 1: LINK ALL BOOTSTRAP LIBRABRIES TO GIT through node package manager
+
+- open Terminal from visual studio code
+- type npm i bootstrap and press enter
+- link css and js file in index.html
