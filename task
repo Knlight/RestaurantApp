@@ -7,8 +7,3 @@ TASK 1: LINK ALL BOOTSTRAP LIBRABRIES TO GIT through node package manager
 - open Terminal from visual studio code
 - type npm i bootstrap and press enter
 - link css and js file in index.html
-
-TASK 2: CREATE A NAVBAR
-
-- create a nav bar [done]
-- try to match all the fonts of the sample, color,spacing, font-size in the navBar [not Done]
