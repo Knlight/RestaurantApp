@@ -1,7 +1,9 @@
-.nav-items{
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "News Cycle", sans-serif;   
+.nav-link{
+  color: #821c32;
+}
+
+.nav-link:hover{
+  color: #20326f;
 }
 
 a{
@@ -9,6 +11,9 @@ text-decoration: none;
 color: #821c32;
 text-transform: uppercase;
 font-weight: 500;
+font-style: normal;
+font-size: 20px; 
+letter-spacing: .05em;
 }
 
 .navsds{
