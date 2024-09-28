@@ -8,41 +8,301 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+  .calenderNumbering{
+    background-color:gray;
+    color: white;
+    padding: 1px; 
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    padding: 6px;
+  }
 
-<body>
+  .activepage{
+    background-color: #015790;
+    color: white;
+    padding: 1px; 
+    font-family: roboto, Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    padding: 6px;
+  }
   
-  <nav class="navbar navbar-expand-lg">
-    <div class="container mt-3">
-    <a href="index.html" class="navbar-toggler"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-    </svg></a>
-    <a href="" class="navbar-toggler navsds"><img src="images/logo.png" alt="" width="100"></a>
-      <button class="navbar-toggler togglerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">   
-          <ul class="navbar-nav  flex-fill">
-              <li class="nav-item p-4">
-                <a class="nav-link" aria-current="page" href="food.html">food</a>
+  .calenderitems{
+    margin-right: 10px;
+  }
+.calenderWrapper{
+  margin-top: 50px;
+  
+}
+
+.leftPanel{
+    background-color: #015790;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+.leftPanelLowerText{
+  font-size: small;
+  height: 250px;
+}
+
+.calenderContent div{
+  display: inline-block;
+  width: 60px;
+  padding: 20px 30px 20px;
+  color: gray;
+}
+
+.monthChangeButton{
+  border: none;
+  background-color: white;
+  color: gray;
+}
+
+.monthChangeButton:hover{
+  background-color: gray;
+  color: white;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.currentDate{
+  background-color: red;
+  color: white !important;
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.calenderDaysHeader{
+  color: gray;
+}
+
+</style>
+<body>
+<div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container mt-3">
+      <a href="index.html" class="navbar-toggler"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+      </svg></a>
+      <a href="" class="navbar-toggler navsds"><img src="images/logo.png" alt="" width="100"></a>
+        <button class="navbar-toggler togglerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav  flex-fill">
+                <li class="nav-item p-4">
+                  <a class="nav-link" aria-current="page" href="food.html">food</a>
+                </li>
+                <li class="nav-item p-4">
+                  <a class="nav-link" href="reservation.html">reservations</a>
+                </li>
+            </ul>
+          <div class="brand  flex-fill">
+            <a href="index.html"><img src="images/logo.png" alt="" height="100px"></a>
+          </div>
+          <ul class="navbar-nav ">
+              <li class="nav-item p-4" >
+                <a class="nav-link" aria-current="page" href="contact.html">contact</a>
               </li>
               <li class="nav-item p-4">
-                <a class="nav-link" href="reservation.html">reservations</a>
+                <a class="nav-link" href="gift-cards.html">gift cards</a>
               </li>
           </ul>
-        <div class="brand  flex-fill">
-          <a href="index.html"><img src="images/logo.png" alt="" height="100px"></a>
-        </div>
-        <ul class="navbar-nav ">
-            <li class="nav-item p-4" >
-              <a class="nav-link" aria-current="page" href="contact.html">contact</a> 
-            </li>
-            <li class="nav-item p-4">
-              <a class="nav-link" href="gift-cards.html">gift cards</a>
-            </li>
-        </ul>
+      </div>
+    </div>
+    </nav>
+  </div>
+  <main>
+    <div class="container ">
+      <div class="main mt-4">
+        <p class="d-flex justify-content-center">Cafe Paci is open for dinner Monday to Saturday 5.30pm-10pm & Lunch Saturday 12pm-2.30pm. <br/>We accommodate groups of up to 14 people. Groups of 6+ dine from our $90 per head set menu. </p>
+    </div>
+    </div>
+  </main>
+
+  
+  <div class="calenderWrapper container">
+  <div class="d-flex justify-content-evenly mt-4"> 
+    <div class="calenderitems">
+      <span>
+        <span class="calenderNumbering rounded-circle activepage">
+    1
+        </span>
+        <span>
+    Booking
+        </span>
+      </span>
+    </div>
+    <div>
+      <span class="horizontalSeperator">
+      </span>
+    </div>
+    
+    <div class="calenderitems">
+      <span>
+        <span class="calenderNumbering rounded-circle">
+    2
+        </span>
+        <span>
+    Your Details
+        </span>
+      </span>
+    </div>
+    <div>
+      <span class="horizontalSeperator ">
+      </span>
+    </div>
+    <div class="calenderitems">
+      <span>
+        <span class="calenderNumbering rounded-circle ">
+    3
+        </span>
+        <span>
+    Your Summary
+        </span>
+      </span>
     </div>
   </div>
-  </nav>
+
+  <div class="row mt-4 mx-5 mb-3">
+      <div class="col-2 leftPanel">
+        <p>2024</p>
+        <p class="leftPanelLowerText">Thu, Sep 26</p>
+      </div>
+      <div class="col-5 calenderHeader">
+        <div class="d-flex justify-content-between">
+          <button class="monthChangeButton mt-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+          </svg></span></button>
+          <h5 class="mt-2">September 2024</h5>
+          <button class="monthChangeButton mt-2"><svg xmlns ="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+          </svg></button>
+        </div>
+
+        <div class="calenderDaysHeader d-flex justify-content-around mt-3">
+          <div>
+            Sun
+          </div>
+          <div>
+            Mon
+          </div>
+          <div>
+            Tues
+          </div>
+          <div>
+            Wed
+          </div>
+          <div>
+            Thurs
+          </div>
+          <div>
+            Fri
+          </div>
+          <div>
+            Sat
+          </div>
+        </div>
+
+        <div class="calenderContent">
+            <div>
+              1
+            </div>
+            <div>
+              2
+            </div>
+            <div>
+              3
+            </div>
+            <div>
+              4
+            </div>
+            <div>
+              5
+            </div>
+            <div>
+              6
+            </div>
+            <div>
+              7
+            </div>
+            <div>
+              8
+            </div>
+            <div>
+              9
+            </div>
+            <div>
+              10
+            </div>
+            <div>
+              11
+            </div>
+            <div>
+              12
+            </div>
+            <div>
+              13
+            </div>
+            <div>
+              14
+            </div>
+            <div>
+              15
+            </div>
+            <div>
+              16
+            </div>
+            <div>
+              17
+            </div>
+            <div>
+              18
+            </div>
+            <div>
+              19
+            </div>
+            <div>
+              20
+            </div>
+            <div>
+              21
+            </div>
+            <div>
+              22
+            </div>
+            <div>
+              23
+            </div>
+            <div>
+              24
+            </div>
+            <div>
+              25
+            </div>
+            <div>
+              26
+            </div>
+            <div>
+              27
+            </div>
+            <div>
+              <span class="currentDate">28</span>
+            </div>
+            <div>
+              29
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-5" style="background-color: lightgray;"></div>
+  </div>
+</div>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   </body>
