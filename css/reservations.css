@@ -1,6 +1,7 @@
 
-.upperText{
+.main{
     font-family: News Cycle;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
     line-height: 40px;
@@ -8,27 +9,19 @@
     letter-spacing: 2px;
   }
 
-  .calenderNumbering{
-    background-color:gray;
+  .calenderNumbering, .activepage{
+    background-color: gray;
     color: white;
-    padding: 1px; 
     font-family: roboto, Arial, Helvetica, sans-serif;
     margin-right: 10px;
-    padding: 6px;
+    padding: 7px 7px 7px 10px;
   }
 
   .activepage{
     background-color: #015790;
-    color: white;
-    padding: 1px; 
-    font-family: roboto, Arial, Helvetica, sans-serif;
-    margin-right: 10px;
-    padding: 6px;
   }
-  
-  .calenderitems{
-    margin-right: 10px;
-  }
+
+
 .calenderWrapper{
   margin-top: 50px;
   
@@ -40,16 +33,30 @@
     padding-top: 20px;
     padding-left: 20px;
   }
+  
 .leftPanelLowerText{
   font-size: small;
   height: 250px;
 }
 
-.calenderContent div{
+/* .calenderContent div{
   display: inline-block;
   width: 60px;
   padding: 20px 30px 20px;
   color: gray;
+} */
+
+.calenderContent{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.calenderItems{
+  width: 14.28%;
+  padding: 18px 0px;
 }
 
 .monthChangeButton{
@@ -67,10 +74,7 @@
 
 .currentDate{
   background-color: red;
-  color: white !important;
-  border-radius: 30px;
-  text-align: center;
-  padding: 5px;
+  color: white;
 }
 
 .calenderDaysHeader{
@@ -102,6 +106,7 @@ padding: 10px;
   top: -12px;
   z-index: 1;
   color:  gray;
+  margin-left: 10px
 }
 
 .bookingInput{
@@ -110,13 +115,7 @@ padding: 10px;
   border-top:none;
 }
 
-.bookingInput:hover{
-border: 1px solid black;
-border-top: none;
-box-shadow: none;
-}
-
-.bookingInput:focus{
+.bookingInput:hover, .bookingInput:focus{
 border: 1px solid black;
 border-top: none;
 box-shadow: none;
