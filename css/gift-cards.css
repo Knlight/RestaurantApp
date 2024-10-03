@@ -1,0 +1,45 @@
+.header, .email-link{
+    text-align: center;
+    font-style: italic;
+    color: #043343;
+    font-size: 19px;
+    letter-spacing: 0.07em;
+    line-height: 2.3em;
+    font-weight: 700;
+    font-family: News Cycle;
+  }
+
+  h1{
+  margin: 70px 0px 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif
+
+}
+
+  .email-link{
+    border-bottom: 1px solid #043343;
+    text-transform: none;
+  }
+
+  .email-link:hover{
+   opacity: 0.7;
+   transition: opacity 0.3s;
+  }
+
+  .giftWrapper{
+    width: 435px;
+    height: 574px;
+    margin: auto;
+  }
+
+  .quote{
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.8em;
+    color: #043343;
+    letter-spacing: 0em;
+    font-weight: 700;
+    font-family: News Cycle;
+  }
