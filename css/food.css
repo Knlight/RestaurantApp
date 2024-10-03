@@ -1,0 +1,25 @@
+.textFormat{
+    color:  #043343;
+    font-family: News Cycle;
+    padding-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+  }
+
+  .imageWrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.imageContainer{
+  margin: 15px 15px 0 0 ;
+  height: 310px;
+  width:300px;
+}
+
+.image-items{
+  height: 310px;
+  width:300px;
+  object-fit: cover;
+}
